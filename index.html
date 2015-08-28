@@ -9,14 +9,15 @@
     <link rel="styleSheet" href="css/components/icon.min.css">
     <link rel="styleSheet" href="css/components/input.min.css">
     <link rel="styleSheet" href="css/components/button.min.css">
+    <link rel="styleSheet" href="css/components/menu.min.css">
     <script src="js/vendor/modernizr.js"></script>
   </head>
 </html>
 <!-- хедер-->
 <div class="row">
   <div class="large-16 myhead">
-    <div class="large-5 medium-16 small-16 columns large-text-left small-text-center bottomoneinside"><img src="img/logo.jpg"></div>
-    <div class="large-6 medium-16 small-16 columns large-text-center small-text-left small-text-center"><i class="icon skype big grey"></i><span>skype &nbsp; &nbsp;</span><i class="icon mail big grey"></i><span>mymail</span></div>
+    <div class="large-5 medium-16 small-16 columns large-text-left small-text-center bottomoneinside"><a href="/"><img src="img/logo.jpg"></a></div>
+    <div class="large-6 medium-16 small-16 columns large-text-center small-text-center"><i class="icon skype big grey"></i><span>skype &nbsp; &nbsp;</span><i class="icon mail big grey"></i><span>mymail</span></div>
     <div class="large-5 medium-16 columns large-text-right small-text-center"><i class="icon phone big grey"></i><span> Тел: +7 (563) 255-22-22</span><br><span>Тел: 8-800-222-22-22</span><br><span>звоните с ПН по ПТ с 8.45 до 18.00</span></div>
   </div>
 </div>
@@ -29,11 +30,17 @@
       <button class="ui button green">Найти</button>
     </div>
     <!--    корзина-->
-    <div class="large-3 column bottomoneinside medium-16 small-11">
-      <p class="right"></p><i class="icon shop huge left grey"></i>Всего товаров<strong> 1</strong><br>На сумму<strong>250 000</strong>
+    <div class="large-4 column bottomoneinside medium-16 small-16 large-text-right small-text-center">
+      <div class="large-6 small-16 column large-text-right"><i class="icon shop huge grey"></i></div>
+      <div class="large-10 small-16 column large-text-left medium-text-center">Всего товаров<strong> 1</strong><br>На сумму<strong> 250 000</strong></div>
     </div>
   </div>
 </div>
 <div class="row">
-  <div class="large-16 searchpanel"></div>
+  <div class="large-16 searchpanel">
+    <div class="ui three item menu"><a href="#" class="item active">Главная</a><a href="#" class="item">Доставка и оплата</a><a href="#" class="item">О компании</a><a href="#" class="item">Контакты</a></div>
+  </div>
 </div>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script>$(document).foundation();</script>

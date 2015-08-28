@@ -9,14 +9,16 @@ html(class="no-js" lang="ru")
         link(rel="styleSheet" href="css/components/icon.min.css")
         link(rel="styleSheet" href="css/components/input.min.css")
         link(rel="styleSheet" href="css/components/button.min.css")
+        link(rel="styleSheet" href="css/components/menu.min.css")
 
         script(src="js/vendor/modernizr.js")
 // хедер
 .row
     .large-16.myhead
         .large-5.medium-16.small-16.columns.large-text-left.small-text-center.bottomoneinside
-            img(src="img/logo.jpg")
-        .large-6.medium-16.small-16.columns.large-text-center.small-text-left.small-text-center
+            a(href="/")
+                img(src="img/logo.jpg")
+        .large-6.medium-16.small-16.columns.large-text-center.small-text-center
             i.icon.skype.big.grey
             span skype &nbsp; &nbsp;
             i.icon.mail.big.grey
@@ -37,17 +39,27 @@ html(class="no-js" lang="ru")
                 input(type="text" placeholder="Введите запрос")
                 button(class="ui button green") Найти
             //    корзина
-            .large-3.column.bottomoneinside.medium-16.small-11
-                p.right
-                i.icon.shop.huge.left.grey
-                | Всего товаров
-                strong  1
-                br
-                | На сумму
-                strong 250 000
+            .large-4.column.bottomoneinside.medium-16.small-16.large-text-right.small-text-center
+                .large-6.small-16.column.large-text-right
+                    i.icon.shop.huge.grey
+                .large-10.small-16.column.large-text-left.medium-text-center
+                    | Всего товаров
+                    strong  1
+                    br
+                    | На сумму
+                    strong  250 000
+
 .row
     .large-16.searchpanel
+        .ui.three.item.menu
+            a(class="item active" href="#") Главная
+            a(class="item" href="#") Доставка и оплата
+            a(class="item" href="#") О компании
+            a(class="item" href="#") Контакты
 
+script(src="js/vendor/jquery.js")
+script(src="js/foundation.min.js")
+script $(document).foundation();
 
 
 
