@@ -1,7 +1,7 @@
 doctype html
 html(class="no-js" lang="ru")
     head
-        titile
+        title Магазин
         meta(charset="utf-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet" href="css/foundation.css")
@@ -10,6 +10,9 @@ html(class="no-js" lang="ru")
         link(rel="styleSheet" href="css/components/input.min.css")
         link(rel="styleSheet" href="css/components/button.min.css")
         link(rel="styleSheet" href="css/components/menu.min.css")
+        link(rel="styleSheet" href="css/components/transition.min.css")
+        link(rel="styleSheet" href="css/components/dropdown.min.css")
+
 
         script(src="js/vendor/modernizr.js")
 // хедер
@@ -36,7 +39,7 @@ html(class="no-js" lang="ru")
             .ui.input.large-offset-3.large-7.column.medium-16
                 form(name="search-form", method="post")
                 i.icon.search.big.grey
-                input(type="text" placeholder="Введите запрос")
+                input(type="text" placeholder="Введите запрос...")
                 button(class="ui button green") Найти
             //    корзина
             .large-4.column.bottomoneinside.medium-16.small-16.large-text-right.small-text-center
@@ -51,16 +54,44 @@ html(class="no-js" lang="ru")
 
 .row
     .large-16.toponeinside
-        .ui.right.dropdown.item.show-for-small-only
-            | Меню
-            i.dropdown.icon
+        // Меню для мобильных версий
+        .small-5.column
+            .ui.center.dropdown.item.show-for-small-only
+                | Меню
+                i.dropdown.icon
+                .menu
+                    div.item
+                        a(href="#")
+                        i.icon.home
+                        | Главная
+                    div.item
+                        a(href="#")
+                        i.icon.shipping
+                        | Доставка и оплата
+                    div.item
+                        a(href="#")
+                        i.icon.building
+                        | О компании
+                    div.item
+                        a(href="#")
+                        i.icon.map
+                        | Контакты
+        //                Меню для больших экранов
         .large-9.column.hide-for-small
             .ui.three.item.menu
-                a(class="item active" href="#") Главная
-                a(class="item" href="#") Доставка и оплата
-                a(class="item" href="#") О компании
-                a(class="item" href="#") Контакты
-         .large-7.column.toponeinside.text-right.myuser
+                a(class="item active" href="#")
+                    i.icon.home
+                    | Главная
+                a(class="item" href="#")
+                    i.icon.shipping
+                    | Доставка и оплата
+                a(class="item" href="#")
+                    i.icon.building
+                    | О компании
+                a(class="item" href="#")
+                    i.icon.map
+                    | Контакты
+         .large-7.column.text-right.myuser.small-11.column
              i.icon.sign.in
              a(href="#") Вход
              i.icon.user
@@ -70,7 +101,10 @@ html(class="no-js" lang="ru")
 
 script(src="js/vendor/jquery.js")
 script(src="js/foundation.min.js")
+script(src="css/components/dropdown.js")
 script $(document).foundation();
+script(src="css/components/transition.js")
+script(src="js/main.js")
 
 
 
