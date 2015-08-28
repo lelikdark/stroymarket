@@ -1,0 +1,53 @@
+doctype html
+html(class="no-js" lang="ru")
+    head
+        titile
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="css/foundation.css")
+        link(rel="styleSheet" href="css/style.css")
+        link(rel="styleSheet" href="css/components/icon.min.css")
+        link(rel="styleSheet" href="css/components/input.min.css")
+        link(rel="styleSheet" href="css/components/button.min.css")
+
+        script(src="js/vendor/modernizr.js")
+// хедер
+.row
+    .large-16.myhead
+        .large-5.medium-16.small-16.columns.large-text-left.small-text-center.bottomoneinside
+            img(src="img/logo.jpg")
+        .large-6.medium-16.small-16.columns.large-text-center.small-text-left.small-text-center
+            i.icon.skype.big.grey
+            span skype &nbsp; &nbsp;
+            i.icon.mail.big.grey
+            span mymail
+        .large-5.medium-16.columns.large-text-right.small-text-center
+            i.icon.phone.big.grey
+            span  Тел: +7 (563) 255-22-22
+            br
+            span Тел: 8-800-222-22-22
+            br
+            span звоните с ПН по ПТ с 8.45 до 18.00
+//панель поиска
+.row
+    .large-14.searchpanel.large-offset-2.right.toptwoinside.medium-16
+            .ui.input.large-offset-3.large-7.column.medium-16
+                form(name="search-form", method="post")
+                i.icon.search.big.grey
+                input(type="text" placeholder="Введите запрос")
+                button(class="ui button green") Найти
+            //    корзина
+            .large-3.column.bottomoneinside.medium-16.small-11
+                p.right
+                i.icon.shop.huge.left.grey
+                | Всего товаров
+                strong  1
+                br
+                | На сумму
+                strong 250 000
+.row
+    .large-16.searchpanel
+
+
+
+
