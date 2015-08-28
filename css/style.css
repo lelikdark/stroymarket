@@ -27,3 +27,7 @@
 .myuser a {
     margin-right: 1rem;
 }
+
+.mycart {
+    text-shadow: 1px 1px 1px #ccc;
+    }
