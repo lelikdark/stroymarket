@@ -16,6 +16,10 @@ $('.browse')
     })
 ;
 
-
-
+$('.ui.sidebar')
+    .sidebar({
+        context: $('.bottom.row')
+    })
+    .sidebar('attach events', '.menu .item')
+;
 

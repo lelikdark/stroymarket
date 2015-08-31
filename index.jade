@@ -17,9 +17,7 @@ html(class="no-js" lang="ru")
         link(rel="styleSheet" href="css/components/dimmer.min.css")
         link(rel="styleSheet" href="css/components/list.min.css")
         link(rel="styleSheet" href="css/components/segment.min.css")
-
-
-
+        link(rel="styleSheet" href="css/components/sidebar.min.css")
         script(src="js/vendor/modernizr.js")
 // хедер
 .row
@@ -109,14 +107,22 @@ html(class="no-js" lang="ru")
             a.ui.button.green(href="#")
                 i.icon.phone.sign
                 | Заказать звонок
-
-.row
-    aside#lside.large-4.column.medium-4
+// основной сегмент для контента
+.row.ui.bottom.attached.pushable
+    .ui.top.attached.demo.menu
+        a.item
+            i.icon.sidebar
+            | Каталог
+    .ui.inverted.labeled.icon.right.inline.vertical.sidebar.menu
+        a.item(href="#") Строительные смеси
+        a.item(href="#") Штукатурные смеси
+        a.item(href="#") Шпатлевачные смеси
+      aside#lside.large-4.column.medium-4
         // Каталог для десктоп версиии
         section.show-for-medium-up
             .mysection.bottomoneinside
                 h5.large-push-1 Строительные материалы
-                    .ui.menu.vertical.nonboreder
+                    .ui.menu.vertical.nonboreder.mymenu
                         .ui.dropdown.item
                             | Сухие смеси
                             i.dropdown.icon
@@ -141,7 +147,7 @@ html(class="no-js" lang="ru")
                                 a.item(href="#") Профили и крепеж упаковками
             .mysection.bottomoneinside
                 h5.large-push-1 Отделочные материалы
-                    .ui.menu.vertical.nonboreder
+                    .ui.menu.vertical.nonboreder.mymenu
                         .ui.dropdown.item
                             | Лако-красочные материалы
                             i.dropdown.icon
@@ -164,36 +170,36 @@ html(class="no-js" lang="ru")
                                 a.item(href="#") Крепеж для гипсокартона
                                 a.item(href="#") Маяки, профили специальные
                                 a.item(href="#") Профили и крепеж упаковками
+            .mysection.bottomoneinside
+                h5.large-push-1 Инструмент
+                    .ui.menu.vertical.nonboreder.mymenu.mymenu
+                        .ui.dropdown.item
+                            | Электро инструмент
+                            i.dropdown.icon
+                            .menu
+                                a.item(href="#") Перфораторы
+                                a.item(href="#") Дрели
+                                a.item(href="#") Шуруповерты
+                        .ui.dropdown.item
+                            | Расходные материалы и насадки
+                            i.dropdown.icon
+                            .menu
+                                a.item(href="#") Буры по бетону
+                                a.item(href="#") Сверла и зубила по бетону
+                                a.item(href="#") Сверла по металу
+                        .ui.dropdown.item
+                            | Малярный инструмент
+                            i.dropdown.icon
+                            .menu
+                                a.item(href="#") Кисти флейцевые
+                                a.item(href="#") Кисти профессиональные
+                                a.item(href="#") Кисти круглые
+                                a.item(href="#") Кисти узкие и радиаторные
+      .large-9.column.medium-11.medium-push-1.large-push-0
+          p lorem
+      .large-3.column
+          p lorem
 
-        //Мобильный каталог , только три основных раздела
-        .browse.item.show-for-small-only.text-center.ui.section
-            | Каталог
-            i.icon.dropdown
-        .ui.fluid.popup.top.left.transition.hidden
-            .ui.three.column.relaxed.divided.grid
-                .column
-                    h5.ui.header.text-center  Строительные материалы
-                    .ui.link.list
-                        a.item(href="#") Сухие смеси
-                        a.item(href="#") Листовые материалы
-                        a.item(href="#") Профили
-                .column
-                    h5.ui.header.text-center Отделочные материалы
-                    .ui.link.list
-                        a.item(href="#") Лако-красочные материалы
-                        a.item(href="#") Потолок
-                        a.item(href="#") Отделка стен
-                .column
-                    h5.ui.header.text-center Инструмент
-                    .ui.link.list
-                        a.item(href="#") Электро инструмент
-                        a.item(href="#") Расходные материалы и насадки
-                        a.item(href="#") Малярный инструмент
-
-    .large-9.column.medium-11.medium-push-1.large-push-0
-        p Тут контент
-    aside#rside.large-3.column
-        p Тут меню
 
 
 
@@ -204,6 +210,7 @@ script(src="css/components/dropdown.js")
 script $(document).foundation();
 script(src="css/components/transition.js")
 script(src="css/components/popup.min.js")
+script(src="css/components/sidebar.min.js")
 script(src="js/main.js")
 
 
