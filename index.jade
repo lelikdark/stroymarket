@@ -20,6 +20,9 @@ html(class="no-js" lang="ru")
         link(rel="styleSheet" href="css/components/sidebar.min.css")
         link(rel="styleSheet" href="css/components/card.min.css")
         link(rel="styleSheet" href="css/components/label.min.css")
+        link(rel="styleSheet" href="css/components/header.min.css")
+        link(rel="styleSheet" href="css/components/divider.min.css")
+
 
         script(src="js/vendor/modernizr.js")
 // хедер
@@ -117,9 +120,9 @@ html(class="no-js" lang="ru")
             i.icon.sidebar
             | Каталог
     .ui.inverted.labeled.icon.left.inline.vertical.sidebar.menu
-        a.item(href="#") Строительные смеси
-        a.item(href="#") Штукатурные смеси
-        a.item(href="#") Шпатлевачные смеси
+        a.item.cat(href="#") Строительные смеси
+        a.item.cat(href="#") Штукатурные смеси
+        a.item.cat(href="#") Шпатлевачные смеси
       aside#lside.large-4.column.medium-4
         // Каталог для десктоп версиии
         section.show-for-medium-up
@@ -198,53 +201,144 @@ html(class="no-js" lang="ru")
                                 a.item(href="#") Кисти профессиональные
                                 a.item(href="#") Кисти круглые
                                 a.item(href="#") Кисти узкие и радиаторные
-      .large-9.column.medium-11.medium-push-1.large-push-0
-          .large-4.medium-8.small-16.column
+      .large-9.column.medium-11.medium-push-1.large-push-0.small-push-1
+          .large-5.medium-8.small-16.column
               .ui.card.column
                   a.image(href="")
                     img(src="images/wireframe/image-square.png")
                   .content
-                      a.header(href="#") Шпатлевка
-                      .meta
-                        | краткое описание
+                      a(href="#") Шлифмашина угловая УШМ-125/900
+                  .extra.content
+                      span.floated.right 25 000 руб
                   .ui.bottom.attached.button.small.green
                       i.icon.shop
                       | В корзину
-          .large-4.medium-8.small-16.column
+          .large-5.medium-8.small-16.column
               .ui.card.column
                   a.image(href="")
                       img(src="images/wireframe/image-square.png")
                   .content
-                      a.header(href="#") Шпатлевка
-                      .meta
-                          | краткое описание
+                      a(href="#") Стеновая панель МДФ 2600х200х7мм
+                  .extra.content
+                      span.floated.right 25 000 руб
                   .ui.bottom.attached.button.small.green
                       i.icon.shop
                       | В корзину
-          .large-4.medium-8.small-16.column
+          .large-5.medium-8.small-16.column
               .ui.card.column
                   a.image(href="")
                       img(src="images/wireframe/image-square.png")
                   .content
-                      a.header(href="#") Шпатлевка
-                      .meta
-                          | краткое описание
+                      a(href="#") Розетка электрическая с заземлением белая
+                  .extra.content
+                      span.floated.right 25 000 руб
                   .ui.bottom.attached.button.small.green
                       i.icon.shop
                       | В корзину
-          .large-4.medium-8.small-16.column.end
+          .large-1.column.hidden-for-medium-down
+          .large-5.medium-8.small-16.column
               .ui.card.column
                   a.image(href="")
                       img(src="images/wireframe/image-square.png")
                   .content
-                      a.header(href="#") Шпатлевка
-                      .meta
-                          | краткое описание
+                      a(href="#") Шлифмашина угловая УШМ-125/900
+                  .extra.content
+                      span.floated.right 25 000 руб
                   .ui.bottom.attached.button.small.green
                       i.icon.shop
                       | В корзину
-      .large-3.column
-          p lorem
+          .large-5.medium-8.small-16.column
+              .ui.card.column
+                  a.image(href="")
+                      img(src="images/wireframe/image-square.png")
+                  .content
+                      a(href="#") Стеновая панель МДФ 2600х200х7мм
+                  .extra.content
+                      span.floated.right 25 000 руб
+                  .ui.bottom.attached.button.small.green
+                      i.icon.shop
+                      | В корзину
+          .large-5.medium-8.small-16.column
+              .ui.card.column
+                  a.image(href="")
+                      img(src="images/wireframe/image-square.png")
+                  .content
+                      a(href="#") Розетка электрическая с заземлением белая
+                  .extra.content
+                      span.floated.right 25 000 руб
+                  .ui.bottom.attached.button.small.green
+                      i.icon.shop
+                      | В корзину
+          .large-1.column.hidden-for-medium-down
+          .large-5.medium-8.small-16.column
+              .ui.card.column
+                  a.image(href="")
+                      img(src="images/wireframe/image-square.png")
+                  .content
+                      a(href="#") Шлифмашина угловая УШМ-125/900
+                  .extra.content
+                      span.floated.right 25 000 руб
+                  .ui.bottom.attached.button.small.green
+                      i.icon.shop
+                      | В корзину
+          .large-5.medium-8.small-16.column
+              .ui.card.column
+                  a.image(href="")
+                      img(src="images/wireframe/image-square.png")
+                  .content
+                      a(href="#") Стеновая панель МДФ 2600х200х7мм
+                  .extra.content
+                      span.floated.right 25 000 руб
+                  .ui.bottom.attached.button.small.green
+                      i.icon.shop
+                      | В корзину
+          .large-5.medium-8.small-16.column
+              .ui.card.column
+                  a.image(href="")
+                      img(src="images/wireframe/image-square.png")
+                  .content
+                      a(href="#") Розетка электрическая с заземлением белая
+                  .extra.content
+                      span.floated.right 25 000 руб
+                  .ui.bottom.attached.button.small.green
+                      i.icon.shop
+                      | В корзину
+          .large-1.column.hidden-for-medium-down
+      aside#rside.large-3.column
+        section.myborder
+            h3.ui.header
+                i.icon.attention.small
+                .content Почему мы ?
+                .ui.divider.fitted
+            .ui.list.large-push-1
+                .item
+                    i.icon.truck.circle
+                    .content
+                        | Быстрая доставка
+                .item
+                    i.icon.info.circle
+                    .content
+                        | Богатый ассортимент
+                .item
+                    i.icon.money
+                    .content
+                        | Низкие цены Скидки и предложения
+                .item
+                    i.icon.calculator
+                    .content
+                        | Прозрачные тарифы На доставку и разгрузку
+        section.text-center.toponeinside
+            i.icon.facebook.big.grey
+            i.icon.vk.big.grey
+            i.icon.twitter.big.grey
+            i.icon.google.big.grey
+
+
+
+
+
+
+
 
 
 

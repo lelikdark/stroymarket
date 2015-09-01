@@ -31,3 +31,12 @@
 .mycart {
     text-shadow: 1px 1px 1px #ccc;
     }
+.mymenu {
+    width: 98% !important;
+    min-width: 5rem;
+}
+
+.myborder {
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+}

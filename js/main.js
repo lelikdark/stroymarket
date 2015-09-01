@@ -21,5 +21,6 @@ $('.ui.sidebar')
         context: $('.bottom.row')
     })
     .sidebar('attach events', '.menu .cat')
+
 ;
 
