@@ -22,8 +22,7 @@ html(class="no-js" lang="ru")
         link(rel="styleSheet" href="css/components/label.min.css")
         link(rel="styleSheet" href="css/components/header.min.css")
         link(rel="styleSheet" href="css/components/divider.min.css")
-
-
+        link(rel="styleSheet" href="css/components/modal.min.css")
         script(src="js/vendor/modernizr.js")
 // хедер
 .row
@@ -103,7 +102,7 @@ html(class="no-js" lang="ru")
                     | Контакты
          .large-7.column.text-right.myuser.small-11.column
              i.icon.sign.in
-             a(href="#") Вход
+             a.enter(href="#") Вход
              i.icon.user
              a(href="#") Регистрация
 
@@ -343,12 +342,35 @@ html(class="no-js" lang="ru")
             .content.large-push-1.small-push-1
                 a(href="#") Иван Колянов
                 p Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился ...
+            .content.large-push-1.small-push-1.text-center
+                a.button.ui(href="#")
+                    i.icon.comments
+                    | Все отзывы
 
 
 
 
 
 
+
+
+
+
+
+
+.ui.modal.small
+    i.close.icon
+    .header Вход
+    .content
+        form.ui.form.medium(name="enter-form", method="post")
+                .field
+                    .ui.icon.input.fluid
+                        i.icon.mail
+                        input(type="text" name="fio" placeholder="Ваш e-mail ")
+                .field
+                    .ui.icon.input.fluid
+                        i.icon.lock
+                        input(type="text" name="pass" placeholder="Пароль")
 
 
 
@@ -364,6 +386,8 @@ script $(document).foundation();
 script(src="css/components/transition.min.js")
 script(src="css/components/popup.min.js")
 script(src="css/components/sidebar.min.js")
+script(src="css/components/dimmer.min.js")
+script(src="css/components/modal.min.js")
 script(src="js/main.js")
 
 

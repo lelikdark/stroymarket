@@ -24,3 +24,12 @@ $('.ui.sidebar')
 
 ;
 
+$('.enter').click(function () {
+        $('.ui.modal')
+            .modal('show');
+        return false ;
+
+        ;
+    }
+);
+
