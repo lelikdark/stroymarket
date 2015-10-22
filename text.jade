@@ -23,6 +23,7 @@ html(class="no-js" lang="ru")
         link(rel="styleSheet" href="css/components/header.min.css")
         link(rel="styleSheet" href="css/components/divider.min.css")
         link(rel="styleSheet" href="css/components/modal.min.css")
+        link(rel="styleSheet" href="css/components/responsive-tables.css")
         script(src="js/vendor/modernizr.js")
 // хедер
 .row
@@ -88,10 +89,10 @@ html(class="no-js" lang="ru")
         //                Меню для больших экранов
         .large-9.column.hide-for-small
             .ui.three.item.menu
-                a(class="item active" href="#")
+                a(class="item" href="#")
                     i.icon.home
                     | Главная
-                a(class="item" href="#")
+                a(class="item active" href="#")
                     i.icon.shipping
                     | Доставка и оплата
                 a(class="item" href="#")
@@ -201,108 +202,50 @@ html(class="no-js" lang="ru")
                                 a.item(href="#") Кисти круглые
                                 a.item(href="#") Кисти узкие и радиаторные
       .large-9.column.medium-11.medium-push-1.large-push-0.small-push-1
-          .large-5.medium-8.small-16.column
-              .ui.card.column
-                  a.image(href="")
-                    img(src="images/wireframe/image-square.png")
-                  .content
-                      a(href="#") Шлифмашина угловая УШМ-125/900
-                  .extra.content
-                      span.floated.right 25 000 руб
-                  .ui.bottom.attached.button.small.green
-                      i.icon.shop
-                      | В корзину
-          .large-5.medium-8.small-16.column
-              .ui.card.column
-                  a.image(href="")
-                      img(src="images/wireframe/image-square.png")
-                  .content
-                      a(href="#") Стеновая панель МДФ 2600х200х7мм
-                  .extra.content
-                      span.floated.right 25 000 руб
-                  .ui.bottom.attached.button.small.green
-                      i.icon.shop
-                      | В корзину
-          .large-5.medium-8.small-16.column
-              .ui.card.column
-                  a.image(href="")
-                      img(src="images/wireframe/image-square.png")
-                  .content
-                      a(href="#") Розетка электрическая с заземлением белая
-                  .extra.content
-                      span.floated.right 25 000 руб
-                  .ui.bottom.attached.button.small.green
-                      i.icon.shop
-                      | В корзину
-          .large-1.column.hidden-for-medium-down
-          .large-5.medium-8.small-16.column
-              .ui.card.column
-                  a.image(href="")
-                      img(src="images/wireframe/image-square.png")
-                  .content
-                      a(href="#") Шлифмашина угловая УШМ-125/900
-                  .extra.content
-                      span.floated.right 25 000 руб
-                  .ui.bottom.attached.button.small.green
-                      i.icon.shop
-                      | В корзину
-          .large-5.medium-8.small-16.column
-              .ui.card.column
-                  a.image(href="")
-                      img(src="images/wireframe/image-square.png")
-                  .content
-                      a(href="#") Стеновая панель МДФ 2600х200х7мм
-                  .extra.content
-                      span.floated.right 25 000 руб
-                  .ui.bottom.attached.button.small.green
-                      i.icon.shop
-                      | В корзину
-          .large-5.medium-8.small-16.column
-              .ui.card.column
-                  a.image(href="")
-                      img(src="images/wireframe/image-square.png")
-                  .content
-                      a(href="#") Розетка электрическая с заземлением белая
-                  .extra.content
-                      span.floated.right 25 000 руб
-                  .ui.bottom.attached.button.small.green
-                      i.icon.shop
-                      | В корзину
-          .large-1.column.hidden-for-medium-down
-          .large-5.medium-8.small-16.column
-              .ui.card.column
-                  a.image(href="")
-                      img(src="images/wireframe/image-square.png")
-                  .content
-                      a(href="#") Шлифмашина угловая УШМ-125/900
-                  .extra.content
-                      span.floated.right 25 000 руб
-                  .ui.bottom.attached.button.small.green
-                      i.icon.shop
-                      | В корзину
-          .large-5.medium-8.small-16.column
-              .ui.card.column
-                  a.image(href="")
-                      img(src="images/wireframe/image-square.png")
-                  .content
-                      a(href="#") Стеновая панель МДФ 2600х200х7мм
-                  .extra.content
-                      span.floated.right 25 000 руб
-                  .ui.bottom.attached.button.small.green
-                      i.icon.shop
-                      | В корзину
-          .large-5.medium-8.small-16.column
-              .ui.card.column
-                  a.image(href="")
-                      img(src="images/wireframe/image-square.png")
-                  .content
-                      a(href="#") Розетка электрическая с заземлением белая
-                  .extra.content
-                      span.floated.right 25 000 руб
-                  .ui.bottom.attached.button.small.green
-                      i.icon.shop
-                      | В корзину
-          .large-1.column.hidden-for-medium-down
+          .large-16.medium-8.small-16.column
+              h1 Доставка и оплата
+              h3.ui.left.floated.header Доставка
+              .ui.clearing.divider
+              p
+                | Быстрая доставка по Москве и области!
+                | Мы доставим Ваши покупки вне зависимости от адреса доставки, объема или массы заказа. В нашем распоряжении есть любые транспортные средства от легковой до большегрузных автомашин 20т. У нас традиционно низкие цены на доставку строительных материалов грузовым и большегрузным автотранспортом. Срок доставки - в день или на следующий со дня заказа или прихода денежных средств на наш расчетный счет.
+              h3.ui.left.floated.header Разгрузка и подъем на этаж
+              .ui.clearing.divider
+              p
+                | Без минимальной стоимости выезда грузчика!
+                | Если Ваш заказ объемный или тяжелый, и Вы не представляете, как поднять его в квартиру или на объект - мы поможем Вам! Стоимость данной услуги зависит от массы заказа и от наличия лифта. Заносим в любой строительный объект на место хранения товара, указанное Вами.
+              table.responsive
+                  tr
+                    th Заголовок
+                    th заголовок
+                    th Заголовок
+                    th заголовок
+                    th заголовок
+                    th заголовок
+                    th Заголовок
+                    th заголовок
+                  tr
+                    td оллолол
+                    td оллолол
+                    td оллолол
+                    td оллолол
+                    td оллолол
+                    td оллолол
+                    td оллолол
+                    td оллолол
+                  tr
+                    td оллолол
+                    td оллолол
+                    td оллолол
+                    td оллолол
+                    td оллолол
+                    td оллолол
+                    td оллолол
+                    td оллолол
+
+
+
+
       aside#rside.large-3.column
         section.myborder.bottomoneinside
             h3.ui.header
@@ -353,7 +296,7 @@ html(class="no-js" lang="ru")
     .large-6.large-text-left.small-text-center.column.hidden-for-medium-down
        .ui.secondary.pointing.menu
             a.item(href="#") Главная
-            a.item(href="#") Доставка и оплата
+            a.item.active(href="#") Доставка и оплата
             a.item(href="#") Покупателям
             a.item(href="#") Поставщикам
             a.item(href="#") Отзывы и предложения
@@ -402,6 +345,7 @@ script(src="css/components/popup.min.js")
 script(src="css/components/sidebar.min.js")
 script(src="css/components/dimmer.min.js")
 script(src="css/components/modal.min.js")
+script(src="css/components/responsive-tables.js")
 script(src="js/main.js")
 
 
