@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+  <head>
+    <title>Магазин</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="styleSheet" href="css/style.css">
+    <link rel="styleSheet" href="css/components/icon.min.css">
+    <link rel="styleSheet" href="css/components/input.min.css">
+    <link rel="styleSheet" href="css/components/button.min.css">
+    <link rel="styleSheet" href="css/components/menu.min.css">
+    <link rel="styleSheet" href="css/components/transition.min.css">
+    <link rel="styleSheet" href="css/components/dropdown.min.css">
+    <link rel="styleSheet" href="css/components/popup.min.css">
+    <link rel="styleSheet" href="css/components/grid.min.css">
+    <link rel="styleSheet" href="css/components/dimmer.min.css">
+    <link rel="styleSheet" href="css/components/list.min.css">
+    <link rel="styleSheet" href="css/components/segment.min.css">
+    <link rel="styleSheet" href="css/components/sidebar.min.css">
+    <link rel="styleSheet" href="css/components/card.min.css">
+    <link rel="styleSheet" href="css/components/label.min.css">
+    <link rel="styleSheet" href="css/components/header.min.css">
+    <link rel="styleSheet" href="css/components/divider.min.css">
+    <link rel="styleSheet" href="css/components/modal.min.css">
+    <link rel="styleSheet" href="css/components/form.min.css">
+    <link rel="styleSheet" href="css/components/responsive-tables.css">
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+</html>
+<!-- хедер-->
+<div class="row">
+  <div class="large-16 myhead">
+    <div class="large-5 medium-16 small-16 columns large-text-left small-text-center bottomoneinside"><a href="/"><img src="img/logo.jpg"></a></div>
+    <div class="large-6 medium-16 small-16 columns large-text-center small-text-center"><i class="icon skype big blue"></i><span>skype &nbsp; &nbsp;</span><i class="icon mail big brown"></i><span>mymail</span></div>
+    <div class="large-5 medium-16 columns large-text-right small-text-center"><i class="icon phone big grey"></i><span> Тел: +7 (563) 255-22-22</span><br><span>Тел: 8-800-222-22-22</span><br><span>звоните с ПН по ПТ с 8.45 до 18.00</span></div>
+  </div>
+</div>
+<!--панель поиска-->
+<div class="row">
+  <div class="large-14 searchpanel large-offset-2 right toptwoinside medium-16">
+    <div class="ui input action large-offset-3 large-7 column medium-16">
+      <form name="search-form" method="post"></form><i class="icon search big mycart grey"></i>
+      <input type="text" placeholder="Введите запрос...">
+      <button class="ui button green">Найти</button>
+    </div>
+    <!--    корзина-->
+    <div class="large-4 column bottomoneinside medium-16 small-16 large-text-right small-text-center">
+      <div class="large-6 small-16 column large-text-right"><i class="icon shop huge mycart orange"></i></div>
+      <div class="large-10 small-16 column large-text-left medium-text-center">Всего товаров<strong> 1</strong><br>На сумму<strong> 25 000</strong></div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-16 toponeinside">
+    <!-- Меню для мобильных версий-->
+    <div class="small-5 column">
+      <div class="ui center dropdown item show-for-small-only">Меню<i class="sidebar icon green"></i>
+        <div class="menu">
+          <div class="item"><a href="#"></a><i class="icon home"></i>Главная</div>
+          <div class="item"><a href="#"></a><i class="icon shipping"></i>Доставка и оплата</div>
+          <div class="item"><a href="#"></a><i class="icon building"></i>О компании</div>
+          <div class="item"><a href="#"></a><i class="icon map"></i>Контакты</div>
+        </div>
+      </div>
+    </div>
+    <!--                Меню для больших экранов-->
+    <div class="large-9 column hide-for-small">
+      <div class="ui three item menu"><a href="#" class="item"><i class="icon home"></i>Главная</a><a href="#" class="item"><i class="icon shipping"></i>Доставка и оплата</a><a href="#" class="item"><i class="icon building"></i>О компании</a><a href="#" class="item active"><i class="icon map"></i>Контакты</a></div>
+    </div>
+    <div class="large-7 column text-right myuser small-11 column"><i class="icon sign in"></i><a href="#" class="enter">Вход</a><i class="icon user"></i><a href="#">Регистрация</a></div>
+  </div>
+</div>
+<div class="row toponeinside bottomoneinside">
+  <div class="large-3 right small-16 small-text-center">
+    <section class="large-text-right small-text-center"><a href="#" class="ui button green"><i class="icon phone sign"></i>Заказать звонок</a></section>
+  </div>
+</div>
+<!-- основной сегмент для контента-->
+<div class="row ui bottom attached pushable">
+  <div class="ui top attached demo menu show-for-small-only"><a class="item cat"><i class="icon sidebar"></i>Каталог</a></div>
+  <div class="ui labeled icon left inline vertical sidebar menu"><a href="#" class="item cat">Строительные смеси</a><a href="#" class="item cat">Штукатурные смеси</a><a href="#" class="item cat">Шпатлевачные смеси</a></div>
+  <aside id="lside" class="large-4 column medium-4">
+    <!-- Каталог для десктоп версиии-->
+    <section class="show-for-medium-up">
+      <div class="mysection bottomoneinside">
+        <h5 class="large-push-1">Строительные материалы
+          <div class="ui menu vertical nonboreder mymenu">
+            <div class="ui dropdown item">Сухие смеси<i class="dropdown icon"></i>
+              <div class="menu"><a href="#" class="item">Строительные смеси</a><a href="#" class="item">Штукатурные смеси</a><a href="#" class="item">Шпатлевачные смеси</a></div>
+            </div>
+            <div class="ui dropdown item">Листовые материалы<i class="dropdown icon"></i>
+              <div class="menu"><a href="#" class="item">Гипсокартон</a><a href="#" class="item">Гипсоволокно</a><a href="#" class="item">Фанера, ОСБ, ДВП, ДСП</a></div>
+            </div>
+            <div class="ui dropdown item">Профили<i class="dropdown icon"></i>
+              <div class="menu"><a href="#" class="item">Профили для гипсокартона</a><a href="#" class="item">Крепеж для гипсокартона</a><a href="#" class="item">Маяки, профили специальные</a><a href="#" class="item">Профили и крепеж упаковками</a></div>
+            </div>
+          </div>
+        </h5>
+      </div>
+      <div class="mysection bottomoneinside">
+        <h5 class="large-push-1">Отделочные материалы
+          <div class="ui menu vertical nonboreder mymenu">
+            <div class="ui dropdown item">Лако-красочные материалы<i class="dropdown icon"></i>
+              <div class="menu"><a href="#" class="item">Краски интерьерные</a><a href="#" class="item">Краски фасадные</a><a href="#" class="item">Эмали по дереву и металлу</a></div>
+            </div>
+            <div class="ui dropdown item">Потолок<i class="dropdown icon"></i>
+              <div class="menu"><a href="#" class="item">Подвесной потолок</a><a href="#" class="item">Реечный потолок</a><a href="#" class="item">Плинтус отделочный</a></div>
+            </div>
+            <div class="ui dropdown item">Профили<i class="dropdown icon"></i>
+              <div class="menu"><a href="#" class="item">Профили для гипсокартона</a><a href="#" class="item">Крепеж для гипсокартона</a><a href="#" class="item">Маяки, профили специальные</a><a href="#" class="item">Профили и крепеж упаковками</a></div>
+            </div>
+          </div>
+        </h5>
+      </div>
+      <div class="mysection bottomoneinside">
+        <h5 class="large-push-1">Инструмент
+          <div class="ui menu vertical nonboreder mymenu mymenu">
+            <div class="ui dropdown item">Электро инструмент<i class="dropdown icon"></i>
+              <div class="menu"><a href="#" class="item">Перфораторы</a><a href="#" class="item">Дрели</a><a href="#" class="item">Шуруповерты</a></div>
+            </div>
+            <div class="ui dropdown item">Расходные материалы и насадки<i class="dropdown icon"></i>
+              <div class="menu"><a href="#" class="item">Буры по бетону</a><a href="#" class="item">Сверла и зубила по бетону</a><a href="#" class="item">Сверла по металу</a></div>
+            </div>
+            <div class="ui dropdown item">Малярный инструмент<i class="dropdown icon"></i>
+              <div class="menu"><a href="#" class="item">Кисти флейцевые</a><a href="#" class="item">Кисти профессиональные</a><a href="#" class="item">Кисти круглые</a><a href="#" class="item">Кисти узкие и радиаторные</a></div>
+            </div>
+          </div>
+        </h5>
+      </div>
+    </section>
+  </aside>
+  <div class="large-9 column medium-11 medium-push-1 large-push-0 small-push-1">
+    <div class="large-16 medium-8 small-16 column">
+      <h1>Связаться с нами
+        <h3 class="ui left floated header">Наши контакты</h3>
+        <div class="ui clearing divider"></div>
+        <p><i class="icon phone green big"></i><span>+7(928) 137-95-04 &nbsp; &nbsp;</span></p>
+        <p><i class="icon skype blue big"></i><span>skype &nbsp; &nbsp;</span></p>
+        <p><i class="icon mail big brown"></i><span>mail@mail.ru &nbsp; &nbsp;</span></p>
+        <p>Время работы офиса: с понедельника по пятницу с 9.00 до 18:00 Доставка осуществляется в будние дни и по субботам.</p>
+      </h1>
+      <h3 class="ui left floated header">Написать ON-LINE</h3>
+      <div class="ui clearing divider"></div>
+      <form name="contact" action="" method="post" class="ui form">
+        <div class="field">
+          <label>Ваше имя</label>
+          <input type="text" name="fio" placeholder="Как к Вам обращаться?">
+        </div>
+        <div class="field">
+          <label>Ваше сообщение</label>
+          <textarea rows="4" placeholder="Суть вопроса"></textarea>
+        </div>
+        <div class="field">
+          <button class="ui submit button right"><i class="icon send"></i>Отправить!</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <aside id="rside" class="large-3 column">
+    <section class="myborder bottomoneinside">
+      <h3 class="ui header"><i class="icon attention small red"></i>
+        <div class="content">Почему мы ?</div>
+        <div class="ui divider fitted"></div>
+      </h3>
+      <div class="ui list large-push-1 small-push-1">
+        <div class="item"><i class="icon truck circle"></i>
+          <div class="content">Быстрая доставка</div>
+        </div>
+        <div class="item"><i class="icon info circle"></i>
+          <div class="content">Богатый ассортимент</div>
+        </div>
+        <div class="item"><i class="icon money"></i>
+          <div class="content">Низкие цены Скидки и предложения</div>
+        </div>
+        <div class="item"><i class="icon calculator"></i>
+          <div class="content">Прозрачные тарифы</div>
+        </div>
+      </div>
+    </section>
+    <section class="text-center toponeinside bottomoneinside"><i class="icon facebook big grey"></i><i class="icon vk big grey"></i><i class="icon twitter big grey"></i><i class="icon google big grey"></i></section>
+    <section class="myborder bottomoneinside">
+      <h3 class="ui header"><i class="icon small star yellow"></i>
+        <div class="content">Отзывы</div>
+        <div class="ui divider fitted"></div>
+      </h3>
+      <div class="content large-push-1 small-push-1 myotziv"><a href="#">Коля Иванов</a>
+        <p>Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился ...</p>
+      </div>
+      <div class="content large-push-1 small-push-1 myotziv"><a href="#">Иван Колянов</a>
+        <p>Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился ...</p>
+      </div>
+      <div class="content large-push-1 small-push-1 text-center"><a href="#" class="button ui"><i class="icon comments"></i>Все отзывы</a></div>
+    </section>
+  </aside>
+</div>
+<div class="row">
+  <div class="footer">
+    <div class="large-4 column">
+      <p></p>
+    </div>
+    <div class="large-6 large-text-left small-text-center column hidden-for-medium-down">
+      <div class="ui secondary pointing menu"><a href="#" class="item">Главная</a><a href="#" class="item active">Доставка и оплата</a><a href="#" class="item">Покупателям</a><a href="#" class="item">Поставщикам</a><a href="#" class="item">Отзывы и предложения</a></div>
+    </div>
+    <div class="large-5 column small-text-center large-text-left">
+      <p>&nbsp;</p>
+      <p>&copy; ООО "КМЮ"</p>
+    </div>
+  </div>
+</div>
+<div class="ui modal small"><i class="close icon"></i>
+  <div class="header">Вход</div>
+  <div class="content">
+    <form name="enter-form" method="post" class="ui form medium login">
+      <div class="field">
+        <div class="ui icon input fluid"><i class="icon mail"></i>
+          <input type="text" name="fio" placeholder="Ваш e-mail ">
+        </div>
+      </div>
+      <div class="field">
+        <div class="ui icon input fluid"><i class="icon lock"></i>
+          <input type="text" name="pass" placeholder="Пароль">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script src="css/components/dropdown.min.js"></script>
+<script>$(document).foundation();</script>
+<script src="css/components/transition.min.js"></script>
+<script src="css/components/popup.min.js"></script>
+<script src="css/components/sidebar.min.js"></script>
+<script src="css/components/dimmer.min.js"></script>
+<script src="css/components/modal.min.js"></script>
+<script src="css/components/responsive-tables.js"></script>
+<script src="js/main.js"></script>

@@ -1,0 +1,331 @@
+doctype html
+html(class="no-js" lang="ru")
+    head
+        title Магазин
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="css/foundation.css")
+        link(rel="styleSheet" href="css/style.css")
+        link(rel="styleSheet" href="css/components/icon.min.css")
+        link(rel="styleSheet" href="css/components/input.min.css")
+        link(rel="styleSheet" href="css/components/button.min.css")
+        link(rel="styleSheet" href="css/components/menu.min.css")
+        link(rel="styleSheet" href="css/components/transition.min.css")
+        link(rel="styleSheet" href="css/components/dropdown.min.css")
+        link(rel="styleSheet" href="css/components/popup.min.css")
+        link(rel="styleSheet" href="css/components/grid.min.css")
+        link(rel="styleSheet" href="css/components/dimmer.min.css")
+        link(rel="styleSheet" href="css/components/list.min.css")
+        link(rel="styleSheet" href="css/components/segment.min.css")
+        link(rel="styleSheet" href="css/components/sidebar.min.css")
+        link(rel="styleSheet" href="css/components/card.min.css")
+        link(rel="styleSheet" href="css/components/label.min.css")
+        link(rel="styleSheet" href="css/components/header.min.css")
+        link(rel="styleSheet" href="css/components/divider.min.css")
+        link(rel="styleSheet" href="css/components/modal.min.css")
+        link(rel="styleSheet" href="css/components/form.min.css")
+        link(rel="styleSheet" href="css/components/responsive-tables.css")
+        script(src="js/vendor/modernizr.js")
+// хедер
+.row
+    .large-16.myhead
+        .large-5.medium-16.small-16.columns.large-text-left.small-text-center.bottomoneinside
+            a(href="/")
+                img(src="img/logo.jpg")
+        .large-6.medium-16.small-16.columns.large-text-center.small-text-center
+            i.icon.skype.big.blue
+            span skype &nbsp; &nbsp;
+            i.icon.mail.big.brown
+            span mymail
+        .large-5.medium-16.columns.large-text-right.small-text-center
+            i.icon.phone.big.grey
+            span  Тел: +7 (563) 255-22-22
+            br
+            span Тел: 8-800-222-22-22
+            br
+            span звоните с ПН по ПТ с 8.45 до 18.00
+//панель поиска
+.row
+    .large-14.searchpanel.large-offset-2.right.toptwoinside.medium-16
+            .ui.input.action.large-offset-3.large-7.column.medium-16
+                form(name="search-form", method="post")
+                i.icon.search.big.mycart.grey
+                input(type="text" placeholder="Введите запрос...")
+                button(class="ui button green") Найти
+            //    корзина
+            .large-4.column.bottomoneinside.medium-16.small-16.large-text-right.small-text-center
+                .large-6.small-16.column.large-text-right
+                    i.icon.shop.huge.mycart.orange
+                .large-10.small-16.column.large-text-left.medium-text-center
+                    | Всего товаров
+                    strong  1
+                    br
+                    | На сумму
+                    strong  25 000
+
+.row
+    .large-16.toponeinside
+        // Меню для мобильных версий
+        .small-5.column
+            .ui.center.dropdown.item.show-for-small-only
+                | Меню
+                i.sidebar.icon.green
+                .menu
+                    div.item
+                        a(href="#")
+                        i.icon.home
+                        | Главная
+                    div.item
+                        a(href="#")
+                        i.icon.shipping
+                        | Доставка и оплата
+                    div.item
+                        a(href="#")
+                        i.icon.building
+                        | О компании
+                    div.item
+                        a(href="#")
+                        i.icon.map
+                        | Контакты
+        //                Меню для больших экранов
+        .large-9.column.hide-for-small
+            .ui.three.item.menu
+                a(class="item" href="#")
+                    i.icon.home
+                    | Главная
+                a(class="item" href="#")
+                    i.icon.shipping
+                    | Доставка и оплата
+                a(class="item" href="#")
+                    i.icon.building
+                    | О компании
+                a(class="item active" href="#")
+                    i.icon.map
+                    | Контакты
+         .large-7.column.text-right.myuser.small-11.column
+             i.icon.sign.in
+             a.enter(href="#") Вход
+             i.icon.user
+             a(href="#") Регистрация
+
+.row.toponeinside.bottomoneinside
+    .large-3.right.small-16.small-text-center
+        section.large-text-right.small-text-center
+            a.ui.button.green(href="#")
+                i.icon.phone.sign
+                | Заказать звонок
+// основной сегмент для контента
+.row.ui.bottom.attached.pushable
+    .ui.top.attached.demo.menu.show-for-small-only
+        a.item.cat
+            i.icon.sidebar
+            | Каталог
+    .ui.labeled.icon.left.inline.vertical.sidebar.menu
+        a.item.cat(href="#") Строительные смеси
+        a.item.cat(href="#") Штукатурные смеси
+        a.item.cat(href="#") Шпатлевачные смеси
+      aside#lside.large-4.column.medium-4
+        // Каталог для десктоп версиии
+        section.show-for-medium-up
+            .mysection.bottomoneinside
+                h5.large-push-1 Строительные материалы
+                    .ui.menu.vertical.nonboreder.mymenu
+                        .ui.dropdown.item
+                            | Сухие смеси
+                            i.dropdown.icon
+                            .menu
+                                a.item(href="#") Строительные смеси
+                                a.item(href="#") Штукатурные смеси
+                                a.item(href="#") Шпатлевачные смеси
+                        .ui.dropdown.item
+                            | Листовые материалы
+                            i.dropdown.icon
+                            .menu
+                                a.item(href="#") Гипсокартон
+                                a.item(href="#") Гипсоволокно
+                                a.item(href="#") Фанера, ОСБ, ДВП, ДСП
+                        .ui.dropdown.item
+                            | Профили
+                            i.dropdown.icon
+                            .menu
+                                a.item(href="#") Профили для гипсокартона
+                                a.item(href="#") Крепеж для гипсокартона
+                                a.item(href="#") Маяки, профили специальные
+                                a.item(href="#") Профили и крепеж упаковками
+            .mysection.bottomoneinside
+                h5.large-push-1 Отделочные материалы
+                    .ui.menu.vertical.nonboreder.mymenu
+                        .ui.dropdown.item
+                            | Лако-красочные материалы
+                            i.dropdown.icon
+                            .menu
+                                a.item(href="#") Краски интерьерные
+                                a.item(href="#") Краски фасадные
+                                a.item(href="#") Эмали по дереву и металлу
+                        .ui.dropdown.item
+                            | Потолок
+                            i.dropdown.icon
+                            .menu
+                                a.item(href="#") Подвесной потолок
+                                a.item(href="#") Реечный потолок
+                                a.item(href="#") Плинтус отделочный
+                        .ui.dropdown.item
+                            | Профили
+                            i.dropdown.icon
+                            .menu
+                                a.item(href="#") Профили для гипсокартона
+                                a.item(href="#") Крепеж для гипсокартона
+                                a.item(href="#") Маяки, профили специальные
+                                a.item(href="#") Профили и крепеж упаковками
+            .mysection.bottomoneinside
+                h5.large-push-1 Инструмент
+                    .ui.menu.vertical.nonboreder.mymenu.mymenu
+                        .ui.dropdown.item
+                            | Электро инструмент
+                            i.dropdown.icon
+                            .menu
+                                a.item(href="#") Перфораторы
+                                a.item(href="#") Дрели
+                                a.item(href="#") Шуруповерты
+                        .ui.dropdown.item
+                            | Расходные материалы и насадки
+                            i.dropdown.icon
+                            .menu
+                                a.item(href="#") Буры по бетону
+                                a.item(href="#") Сверла и зубила по бетону
+                                a.item(href="#") Сверла по металу
+                        .ui.dropdown.item
+                            | Малярный инструмент
+                            i.dropdown.icon
+                            .menu
+                                a.item(href="#") Кисти флейцевые
+                                a.item(href="#") Кисти профессиональные
+                                a.item(href="#") Кисти круглые
+                                a.item(href="#") Кисти узкие и радиаторные
+      .large-9.column.medium-11.medium-push-1.large-push-0.small-push-1
+          .large-16.medium-8.small-16.column
+              h1 Связаться с нами
+                  h3.ui.left.floated.header Наши контакты
+                  .ui.clearing.divider
+                  p
+                    i.icon.phone.green.big
+                    span +7(928) 137-95-04 &nbsp; &nbsp;
+                  p
+                    i.icon.skype.blue.big
+                    span skype &nbsp; &nbsp;
+                  p
+                    i.icon.mail.big.brown
+                    span mail@mail.ru &nbsp; &nbsp;
+                  p Время работы офиса: с понедельника по пятницу с 9.00 до 18:00 Доставка осуществляется в будние дни и по субботам.
+              h3.ui.left.floated.header Написать ON-LINE
+              .ui.clearing.divider
+              form.ui.form(name="contact", action="", method="post")
+                  .field
+                      label Ваше имя
+                      input(type="text", name="fio", placeholder="Как к Вам обращаться?")
+                  .field
+                      label Ваше сообщение
+                      textarea(rows="4", placeholder="Суть вопроса")
+                  .field
+                        button.ui.submit.button.right
+                            i.icon.send
+                            | Отправить!
+
+      aside#rside.large-3.column
+        section.myborder.bottomoneinside
+            h3.ui.header
+                i.icon.attention.small.red
+                .content Почему мы ?
+                .ui.divider.fitted
+            .ui.list.large-push-1.small-push-1
+                .item
+                    i.icon.truck.circle
+                    .content
+                        | Быстрая доставка
+                .item
+                    i.icon.info.circle
+                    .content
+                        | Богатый ассортимент
+                .item
+                    i.icon.money
+                    .content
+                        | Низкие цены Скидки и предложения
+                .item
+                    i.icon.calculator
+                    .content
+                        | Прозрачные тарифы
+        section.text-center.toponeinside.bottomoneinside
+            i.icon.facebook.big.grey
+            i.icon.vk.big.grey
+            i.icon.twitter.big.grey
+            i.icon.google.big.grey
+        section.myborder.bottomoneinside
+            h3.ui.header
+                i.icon.small.star.yellow
+                .content Отзывы
+                .ui.divider.fitted
+            .content.large-push-1.small-push-1.myotziv
+                a(href="#") Коля Иванов
+                p Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился ...
+            .content.large-push-1.small-push-1.myotziv
+                a(href="#") Иван Колянов
+                p Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился ...
+            .content.large-push-1.small-push-1.text-center
+                a.button.ui(href="#")
+                    i.icon.comments
+                    | Все отзывы
+.row
+   .footer
+    .large-4.column
+        p
+    .large-6.large-text-left.small-text-center.column.hidden-for-medium-down
+       .ui.secondary.pointing.menu
+            a.item(href="#") Главная
+            a.item.active(href="#") Доставка и оплата
+            a.item(href="#") Покупателям
+            a.item(href="#") Поставщикам
+            a.item(href="#") Отзывы и предложения
+    .large-5.column.small-text-center.large-text-left
+        p &nbsp;
+        p &copy; ООО "КМЮ"
+
+
+
+
+
+
+.ui.modal.small
+    i.close.icon
+    .header Вход
+    .content
+        form.ui.form.medium.login(name="enter-form", method="post")
+                .field
+                    .ui.icon.input.fluid
+                        i.icon.mail
+                        input(type="text" name="fio" placeholder="Ваш e-mail ")
+                .field
+                    .ui.icon.input.fluid
+                        i.icon.lock
+                        input(type="text" name="pass" placeholder="Пароль")
+
+
+
+
+
+
+
+
+script(src="js/vendor/jquery.js")
+script(src="js/foundation.min.js")
+script(src="css/components/dropdown.min.js")
+script $(document).foundation();
+script(src="css/components/transition.min.js")
+script(src="css/components/popup.min.js")
+script(src="css/components/sidebar.min.js")
+script(src="css/components/dimmer.min.js")
+script(src="css/components/modal.min.js")
+script(src="css/components/responsive-tables.js")
+script(src="js/main.js")
+
+
+
