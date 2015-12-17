@@ -1,3 +1,492 @@
+/* added by the helper */
+
+.orderinfo > span
+{
+    display: block;
+}
+
+.orderinfo{
+    margin-bottom: 20px;
+}
+.order{
+    margin-top: 60px;
+}
+
+.buy{
+    width: 50% !important;
+    position: relative !important;
+    margin-top: 20px !important;
+
+}
+
+.num_price{
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.zavod_settings > span
+{
+    display: block;
+}
+
+.zavod_settings {
+    font-size: 10pt;
+}
+
+.main_info > p{
+
+    font-size: 10pt;
+}
+
+.theinfo{
+    width:60%;
+    padding-left: 20px;
+    position: relative;
+}
+
+.allabout{
+    margin-top:25px;
+}
+
+.allabout > div{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.iso{
+    background-image: url(./img/smes.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    width:20%;
+    min-width: 200px;
+    height: 40%;
+    min-height: 300px;
+}
+
+.basket{
+    background-image: url(./img/basket.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center;
+    width:100%;
+    height: 100%;
+}
+
+.merch_table{
+    margin-top: 30px;
+}
+
+.methods_show{
+    width: auto;
+    min-width: 250px;
+}
+
+.likewindow{
+    background-image: url(./img/window.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 15% center;
+    padding-left: 17%;
+}
+
+.liketable{
+    background-image: url(./img/table.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 15% center;
+    padding-left: 17%;
+}
+
+.showmerch_text
+{
+    line-height: 25px;
+    vertical-align: center;
+}
+
+.showmerch{
+    margin-top:10px;
+}
+
+.showmerch > div {
+    display: inline-block;
+}
+
+.methods_show > div {
+    display: inline-block;
+}
+
+.inthebox{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-image: url(./img/plus.png);
+    background-repeat: no-repeat;
+    background-position: 15% center;
+    background-size: contain;
+
+}
+
+.price_build{
+    float:left;
+    font-size: 10pt;
+    vertical-align: bottom;
+    line-height:25px;
+}
+
+
+.merch_build_img{
+    padding: 10px;
+    background-image: url(./img/smes.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 120px;
+    min-width: 90px;
+    width:100%;
+}
+
+.merch_build
+{
+    width:100%;
+    height: 50%;
+}
+
+.merch_build_header{
+    font-size: 10pt;
+}
+
+.merch_build > div{
+    width: 25%;
+    min-width: 165px;
+    height: 50%;
+    min-height: 250px;
+    display:inline-block;
+    padding: 10px;
+    margin-right: 20px;
+    position: relative;
+
+}
+
+.smes_syh_text{
+    margin-top: 50px;
+    width:100%;
+}
+
+.smes_text{
+    margin-top: 50px;
+    width:100%;
+}
+
+.uno{
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 25px;
+    position: relative;
+}
+
+.merch_img{
+    padding: 10px;
+    background-image: url(./img/smes.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 120px;
+    min-width: 90px;
+    width:100%;
+
+}
+
+.merch_moreinfo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.merch{
+    width:100%;
+    height:50%;
+    margin-top: 25px;
+}
+
+.merch > div{
+    display: inline-block;
+    margin-right: 3%;
+    width:19%;
+    min-width:150px;
+    height:50%;
+    min-height:200px;
+}
+
+.social_media{
+    width:40%;
+    min-width:175px;
+}
+.social_media > div{
+    width:40px;
+    height: 40px;
+    min-width:40px;
+    display: inline-block;
+
+}
+
+.socmed{
+    margin-top: 10px;
+}
+
+.fieldinfo{
+    width:100%;
+}
+
+.fieldinfo > div{
+    display: inline-block;
+    width:49%;
+    min-width: 200px;
+    margin-bottom: 10px;
+}
+
+.fieldinfo input{
+    width: 70%;
+    min-width: 200px;
+}
+
+
+.acc_but_style{
+    width:100%;
+    margin-top:20px;
+}
+
+.acc_but_style > div{
+    width:49%;
+    min-width:150px;
+    display:inline-block;
+}
+
+.acc_but_style button{
+    width:30%;
+    min-width:150px;
+    margin-top: 10px;
+
+}
+
+.save
+{
+    background-image: url(./img/save.png);
+    background-repeat: no-repeat;
+    background-position: 10% center;
+    background-size: 20px 20px;
+    padding-left: 3%;
+    width: 30%;
+    min-width:200px;
+}
+
+.out{
+    background-image: url(./img/out.png);
+    background-repeat: no-repeat;
+    background-position: 15% center;
+    background-size: 20px 20px;
+    padding-left: 5%;
+    width: 30%;
+    min-width:200px;
+}
+
+
+.fieldinfoUr{
+    width:100%;
+
+}
+
+.fieldinfoUr > div{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.block{
+    width:39%;
+    min-width:200px;
+}
+
+.block2{
+    width:60%;
+    min-width:200px;
+}
+
+.block2 > div{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.block > div{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.block input{
+    width:70%;
+    min-width: 200px;
+}
+
+
+
+
+.address{
+    width:100% !important;
+}
+
+.address > textarea
+{
+    width:100%;
+}
+
+
+
+.fb
+{
+    background-image: url(./img/fb.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.vk
+{
+    background-image: url(./img/vk.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.tw
+{
+    background-image: url(./img/tw.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.gp
+{
+    background-image: url(./img/gp.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.korpus{
+    width:100%;
+}
+
+
+.korpus > div, .korpus > input { display: none; }
+
+.korpus label { padding: 5px; border: 1px solid #aaa; line-height: 28px; cursor: pointer; position: relative; bottom: 1px; background: #fff; }
+.korpus input[type="radio"]:checked + label { border-bottom: 2px solid #fff; }
+
+.korpus > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+.korpus > input:nth-of-type(2):checked ~ div:nth-of-type(2),
+.korpus > input:nth-of-type(3):checked ~ div:nth-of-type(3) { display: block; padding: 25px; border: 1px solid #aaa; }
+
+.name
+{
+    width:100%;
+    margin: 15px 15px 15px 0 ;
+}
+
+.submit_button > div{
+    display: inline-block;
+}
+
+.submit_button{
+    background-image: url(./img/galka.png);
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    padding-left:25px;
+    width:150px;
+    line-height: 25px;
+    margin-bottom:50px;
+    float:right;
+}
+
+.contact_logo{
+    width:50px;
+    height:50px;
+    text-align:left;
+    margin: 15px;
+    border-radius:20%;
+}
+
+.phone{
+    background-image: url(./img/phone.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.skype{
+    background-image: url(./img/skype.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.mail{
+    background-image: url(./img/mail.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo{
+    display:inline-block;
+}
+
+.loaders
+{
+
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.loaders
+{
+    border: 1px solid black;
+}
+
+tr > th
+{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+tr > td
+{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.loaders th{
+    background-color: #bf930d;
+    text-align: center;
+}
+
+
+/* stop */
+
+.color1
+{
+    background-color: #f1b705;
+}
+
+.color2
+{
+    background-color: #eed382;
+}
+
+
 .myhead {
     padding-top: 1rem;
 }
